@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CadastroActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+//Havera modificacaoes na tela de cadastro
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtCadNome"
+                android:layout_width="match_parent"
+                android:inputType="textCapCharacters"
+                android:layout_height="wrap_content"
+                android:hint="Nome"/>
+
+            <EditText
+                android:id="@+id/edtCadEmail"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"/>
+
+            <EditText
+                android:id="@+id/edtCadSenha"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:hint="Senha"/>
+
+            <EditText
+                android:id="@+id/edtCadConfirmarSenha"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:hint="Confirma Senha"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:id="@+id/rgSexo">
+                <RadioButton
+                    android:id="@+id/rbFeminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Femn"/>
+
+                <RadioButton
+                    android:id="@+id/rbMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Masculino"/>
+            </RadioGroup>
+            <Button
+                android:id="@+id/btnGravar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gravar"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    //Imagem da logo parkingcg
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="276dp"
+        android:layout_height="154dp"
+        android:baselineAligned="false"
+        app:srcCompat="@drawable/parkingcg" />
+    //Texto
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:gravity="center"
+        android:text="Encontre sua vaga!"
+        android:textColor="#ff365694"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    //Botao de fazer login
+
+    <Button
+        android:id="@+id/btnfazerlogin"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:background="#2ad8cf"
+        android:gravity="center"
+        android:text="Fazer Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+</LinearLayout>
